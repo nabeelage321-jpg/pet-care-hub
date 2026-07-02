@@ -25,10 +25,11 @@ export const metadata = {
     description:
       "Real, curated guides on dog and cat breeds, common health conditions, and pet product buying guides.",
   },
+  verification: {
+    google: "nrQfXDbfR7qFDIjiFgoF47jMFAa8myV4cVgzyKtlU64",
+  },
 };
-verification: {
-  google: "nrQfXDbfR7qFDIjiFgoF47jMFAa8myV4cVgzyKtlU64",
-},
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
