@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getAllConditions, getConditionBySlug, getAllBreeds } from "@/lib/data";
+import { buildOpenGraph, articleJsonLd, SITE_URL } from "@/lib/seo";
 import VetDisclaimer from "@/components/VetDisclaimer";
 
 export function generateStaticParams() {
@@ -10,9 +11,12 @@ export function generateStaticParams() {
 export function generateMetadata({ params }) {
   const condition = getConditionBySlug(params.condition);
   if (!condition) return {};
+  const title = `${condition.name} in Pets -- Symptoms & General Info`;
+  const description = condition.summary;
   return {
-    title: `${condition.name} in Pets -- Symptoms & General Info`,
-    description: condition.summary,
+    title,
+    description,
+    openGraph: buildOpenGraph({ title, description, path: `/health-condition/${condition.slug}` }),
   };
 }
 
@@ -26,6 +30,18 @@ export default function ConditionPage({ params }) {
 
   return (
     <div className="max-w-3xl mx-auto px-4 py-12">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(
+            articleJsonLd({
+              headline: condition.name,
+              description: condition.summary,
+              url: `${SITE_URL}/health-condition/${condition.slug}`,
+            })
+          ),
+        }}
+      />
       <p className="text-sm text-amber-700 mb-2">
         Affects: {condition.species.join(" & ")}
       </p>
