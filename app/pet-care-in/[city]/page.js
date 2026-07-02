@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 import { getAllCities, getCityBySlug } from "@/lib/data";
+import { buildOpenGraph, articleJsonLd, SITE_URL } from "@/lib/seo";
 
 export function generateStaticParams() {
   return getAllCities().map((c) => ({ city: c.slug }));
@@ -8,9 +9,12 @@ export function generateStaticParams() {
 export function generateMetadata({ params }) {
   const city = getCityBySlug(params.city);
   if (!city) return {};
+  const title = `Pet Care in ${city.name}, ${city.state}`;
+  const description = `Climate and local pet care considerations for ${city.name}, ${city.state}.`;
   return {
-    title: `Pet Care in ${city.name}, ${city.state}`,
-    description: `Climate and local pet care considerations for ${city.name}, ${city.state}.`,
+    title,
+    description,
+    openGraph: buildOpenGraph({ title, description, path: `/pet-care-in/${city.slug}` }),
   };
 }
 
@@ -20,6 +24,18 @@ export default function CityPage({ params }) {
 
   return (
     <div className="max-w-3xl mx-auto px-4 py-12">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(
+            articleJsonLd({
+              headline: `Pet Care in ${city.name}, ${city.state}`,
+              description: city.note,
+              url: `${SITE_URL}/pet-care-in/${city.slug}`,
+            })
+          ),
+        }}
+      />
       <h1 className="text-3xl font-bold mb-2">Pet Care in {city.name}, {city.state}</h1>
       <p className="text-gray-500 mb-6">{city.climate}</p>
 
