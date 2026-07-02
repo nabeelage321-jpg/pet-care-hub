@@ -1,0 +1,58 @@
+[
+  {
+    "slug": "dog-food",
+    "name": "Dog Food",
+    "species": "dog",
+    "whatToLookFor": ["AAFCO statement confirming complete & balanced nutrition", "Named animal protein as the first ingredient", "Formula matched to life stage (puppy/adult/senior)", "Vet guidance for breed-specific or medical needs"],
+    "overview": "Choosing dog food comes down to matching AAFCO-certified nutrition to your dog's life stage, size, and any health conditions. There is no single 'best' brand for every dog -- a vet or veterinary nutritionist can help with dogs that have specific medical needs."
+  },
+  {
+    "slug": "cat-food",
+    "name": "Cat Food",
+    "species": "cat",
+    "whatToLookFor": ["AAFCO statement for complete & balanced nutrition", "High animal protein content (cats are obligate carnivores)", "Wet vs dry balance for hydration", "Life-stage-appropriate formula"],
+    "overview": "Cats are obligate carnivores with higher protein needs than dogs. Many vets recommend at least some wet food in the diet to support hydration, particularly for cats prone to urinary issues."
+  },
+  {
+    "slug": "flea-tick-prevention",
+    "name": "Flea & Tick Prevention",
+    "species": "both",
+    "whatToLookFor": ["EPA or FDA approval status", "Species-specific formulation (never use dog product on a cat)", "Local flea/tick season length", "Vet recommendation for your pet's health history"],
+    "overview": "Flea and tick prevention products vary by species, weight, and region. It's important to use only products labeled for your specific pet -- some dog flea treatments are toxic to cats."
+  },
+  {
+    "slug": "dog-leashes-collars",
+    "name": "Leashes & Collars",
+    "species": "dog",
+    "whatToLookFor": ["Secure, well-stitched hardware", "Correct collar fit (two fingers should fit under it)", "Harness option for breeds prone to tracheal issues", "Reflective material for visibility"],
+    "overview": "For breeds prone to tracheal collapse or neck sensitivity (small toy breeds), a harness is generally recommended over a collar for daily walks."
+  },
+  {
+    "slug": "orthopedic-dog-beds",
+    "name": "Orthopedic Dog Beds",
+    "species": "dog",
+    "whatToLookFor": ["Supportive foam density appropriate to weight", "Washable cover", "Size that lets the dog fully stretch out", "Non-slip base"],
+    "overview": "Orthopedic beds are especially worth considering for senior dogs or breeds prone to joint conditions like hip dysplasia, since supportive foam reduces pressure on joints."
+  },
+  {
+    "slug": "cat-litter",
+    "name": "Cat Litter",
+    "species": "cat",
+    "whatToLookFor": ["Clumping vs non-clumping based on cleaning preference", "Dust-free formulas for respiratory-sensitive cats", "Unscented options (many cats dislike heavy fragrance)", "Litter box size relative to cat size"],
+    "overview": "Cats can be particular about litter texture and scent, and sudden changes are a common cause of litter box avoidance -- transitioning gradually is generally recommended."
+  },
+  {
+    "slug": "joint-supplements",
+    "name": "Joint Supplements",
+    "species": "both",
+    "whatToLookFor": ["Glucosamine/chondroitin content", "Vet recommendation, especially for diagnosed joint conditions", "Species-appropriate dosing", "Third-party testing where available"],
+    "overview": "Joint supplements are commonly recommended alongside -- not instead of -- veterinary treatment for conditions like hip or elbow dysplasia. Discuss dosing with a vet, particularly for growing puppies."
+  },
+  {
+    "slug": "dental-chews",
+    "name": "Dental Chews",
+    "species": "dog",
+    "whatToLookFor": ["VOHC (Veterinary Oral Health Council) seal of acceptance", "Appropriate size/hardness for the dog's chewing style", "Calorie content if the dog is weight-managed"],
+    "overview": "Dental chews can help reduce plaque buildup but don't replace brushing or professional cleanings, especially for small breeds prone to dental disease."
+  }
+]

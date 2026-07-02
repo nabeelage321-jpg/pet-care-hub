@@ -1,0 +1,137 @@
+[
+  {
+    "slug": "hip-dysplasia",
+    "name": "Hip Dysplasia",
+    "species": ["dog"],
+    "summary": "A malformation of the hip joint where the ball and socket don't fit or develop properly, common in large and giant breed dogs.",
+    "symptoms": ["Reluctance to jump or climb stairs", "Decreased activity", "Loose or 'bunny hop' gait", "Stiffness after rest"],
+    "commonlyAffected": ["golden-retriever", "labrador-retriever", "german-shepherd", "great-dane", "rottweiler"],
+    "generalInfo": "Hip dysplasia is largely genetic but can be worsened by rapid growth, excess weight, or high-impact exercise in puppyhood. Diagnosis is typically made via physical exam and X-ray. Management ranges from weight control and joint supplements for mild cases to surgery for severe cases."
+  },
+  {
+    "slug": "elbow-dysplasia",
+    "name": "Elbow Dysplasia",
+    "species": ["dog"],
+    "summary": "An abnormal development of the elbow joint, one of the most common causes of front-leg lameness in large-breed dogs.",
+    "symptoms": ["Front leg limping", "Stiffness after exercise", "Reluctance to extend the elbow fully"],
+    "commonlyAffected": ["labrador-retriever", "german-shepherd", "rottweiler"],
+    "generalInfo": "Often appears in dogs under two years old. Early diagnosis via X-ray or CT can help manage progression through weight control, physical therapy, or surgery in more severe cases."
+  },
+  {
+    "slug": "brachycephalic-syndrome",
+    "name": "Brachycephalic Airway Syndrome",
+    "species": ["dog", "cat"],
+    "summary": "A set of upper airway abnormalities common in flat-faced breeds that can cause breathing difficulty, especially in heat or during exercise.",
+    "symptoms": ["Noisy or labored breathing", "Snoring", "Exercise intolerance", "Overheating easily"],
+    "commonlyAffected": ["french-bulldog", "bulldog", "shih-tzu", "persian"],
+    "generalInfo": "Severity varies widely. Owners of affected breeds are generally advised to avoid strenuous exercise in heat and monitor breathing closely; surgical correction is available for moderate to severe cases."
+  },
+  {
+    "slug": "intervertebral-disc-disease",
+    "name": "Intervertebral Disc Disease (IVDD)",
+    "species": ["dog"],
+    "summary": "A spinal condition where the cushioning discs between vertebrae bulge or rupture, common in long-backed breeds.",
+    "symptoms": ["Reluctance to move", "Yelping when touched or picked up", "Weakness in hind legs", "In severe cases, paralysis"],
+    "commonlyAffected": ["dachshund"],
+    "generalInfo": "IVDD is considered a veterinary emergency if hind-leg function is affected. Owners of predisposed breeds are often advised to limit jumping and use ramps instead of stairs."
+  },
+  {
+    "slug": "mitral-valve-disease",
+    "name": "Mitral Valve Disease",
+    "species": ["dog"],
+    "summary": "A progressive heart condition where the mitral valve degenerates over time, one of the most common heart diseases in small-breed dogs.",
+    "symptoms": ["Coughing", "Fatigue", "Rapid breathing", "Reduced exercise tolerance"],
+    "commonlyAffected": ["cavalier-king-charles-spaniel"],
+    "generalInfo": "Often detected via a heart murmur at a routine vet visit before symptoms appear, which is why regular checkups matter for predisposed breeds."
+  },
+  {
+    "slug": "bloat",
+    "name": "Bloat (Gastric Dilatation-Volvulus)",
+    "species": ["dog"],
+    "summary": "A life-threatening emergency where the stomach fills with gas and can twist, cutting off blood supply.",
+    "symptoms": ["Distended abdomen", "Unproductive retching", "Restlessness", "Rapid heart rate"],
+    "commonlyAffected": ["great-dane", "german-shepherd", "boxer"],
+    "generalInfo": "This is a true emergency requiring immediate veterinary care -- it can be fatal within hours. Deep-chested large breeds are at higher risk, and many vets recommend slower feeding and avoiding vigorous exercise right after meals."
+  },
+  {
+    "slug": "hypertrophic-cardiomyopathy",
+    "name": "Hypertrophic Cardiomyopathy (HCM)",
+    "species": ["cat"],
+    "summary": "A thickening of the heart muscle and the most common heart disease in cats.",
+    "symptoms": ["Rapid breathing", "Lethargy", "Reduced appetite", "In severe cases, sudden collapse"],
+    "commonlyAffected": ["maine-coon", "ragdoll", "bengal", "british-shorthair", "sphynx"],
+    "generalInfo": "HCM can be silent for years and is sometimes first detected via a heart murmur or on imaging. Genetic testing exists for some predisposed breeds like Maine Coons and Ragdolls."
+  },
+  {
+    "slug": "polycystic-kidney-disease",
+    "name": "Polycystic Kidney Disease (PKD)",
+    "species": ["cat"],
+    "summary": "An inherited condition causing fluid-filled cysts to form in the kidneys, gradually reducing kidney function.",
+    "symptoms": ["Increased thirst and urination", "Weight loss", "Reduced appetite", "Lethargy"],
+    "commonlyAffected": ["persian", "scottish-fold"],
+    "generalInfo": "PKD is typically diagnosed via ultrasound and is most associated with Persian and related breeds. There is no cure, but management focuses on supporting kidney function and monitoring."
+  },
+  {
+    "slug": "dental-disease",
+    "name": "Dental Disease",
+    "species": ["dog", "cat"],
+    "summary": "One of the most common health issues in pets, especially small dog breeds, ranging from plaque buildup to periodontal disease.",
+    "symptoms": ["Bad breath", "Yellow or brown tartar on teeth", "Difficulty chewing", "Red or bleeding gums"],
+    "commonlyAffected": ["chihuahua", "yorkshire-terrier", "pomeranian", "shih-tzu"],
+    "generalInfo": "Regular tooth brushing and professional cleanings are the main preventive measures. Left untreated, dental disease can lead to tooth loss and has been linked to broader health issues."
+  },
+  {
+    "slug": "obesity",
+    "name": "Obesity",
+    "species": ["dog", "cat"],
+    "summary": "Excess body weight is one of the most common preventable health problems in pets and a risk factor for many other conditions.",
+    "symptoms": ["Difficulty feeling ribs under fat", "Reduced stamina", "Reluctance to exercise"],
+    "commonlyAffected": ["labrador-retriever", "beagle", "dachshund", "british-shorthair"],
+    "generalInfo": "Obesity increases risk for joint problems, diabetes, and heart strain. Vets typically recommend a measured feeding plan and regular exercise tailored to the individual pet."
+  },
+  {
+    "slug": "ear-infections",
+    "name": "Ear Infections",
+    "species": ["dog"],
+    "summary": "Inflammation or infection of the ear canal, especially common in breeds with floppy ears or heavy ear hair.",
+    "symptoms": ["Head shaking", "Scratching at ears", "Odor", "Redness or discharge"],
+    "commonlyAffected": ["labrador-retriever", "beagle"],
+    "generalInfo": "Regular ear cleaning and drying after swimming can help prevent infections in predisposed breeds. Persistent infections should be evaluated by a vet, as they can indicate allergies or other underlying issues."
+  },
+  {
+    "slug": "patellar-luxation",
+    "name": "Patellar Luxation",
+    "species": ["dog"],
+    "summary": "A kneecap that slips out of its normal position, common in small and toy dog breeds.",
+    "symptoms": ["Skipping or hopping gait", "Sudden lameness that resolves quickly", "Holding a leg up briefly while walking"],
+    "commonlyAffected": ["chihuahua", "pomeranian", "yorkshire-terrier"],
+    "generalInfo": "Mild cases may not need treatment, while more severe or frequent luxations are often corrected surgically. A vet can grade the severity on a 1-4 scale."
+  },
+  {
+    "slug": "epilepsy",
+    "name": "Epilepsy",
+    "species": ["dog"],
+    "summary": "A neurological condition causing recurrent seizures, with a genetic (idiopathic) form common in several breeds.",
+    "symptoms": ["Seizures", "Disorientation after episodes", "Sometimes drooling or paddling motions during a seizure"],
+    "commonlyAffected": ["border-collie", "australian-shepherd", "poodle"],
+    "generalInfo": "Idiopathic epilepsy usually appears between 6 months and 6 years of age. Diagnosis involves ruling out other causes, and many dogs are well managed long-term with anti-seizure medication."
+  },
+  {
+    "slug": "collie-eye-anomaly",
+    "name": "Collie Eye Anomaly",
+    "species": ["dog"],
+    "summary": "An inherited eye condition affecting development of the retina and other eye structures, found mainly in herding breeds.",
+    "symptoms": ["Often no visible symptoms in mild cases", "Vision impairment in severe cases"],
+    "commonlyAffected": ["border-collie", "australian-shepherd"],
+    "generalInfo": "This condition is typically detected via an eye exam by a veterinary ophthalmologist in puppyhood, since it's present from birth and doesn't worsen over time in most cases."
+  },
+  {
+    "slug": "skin-allergies",
+    "name": "Skin Allergies",
+    "species": ["dog", "cat"],
+    "summary": "An overreaction of the immune system to environmental, food, or flea allergens, resulting in itchy, inflamed skin.",
+    "symptoms": ["Excessive scratching or licking", "Red or inflamed skin", "Hair loss", "Recurrent skin infections"],
+    "commonlyAffected": ["french-bulldog", "bulldog"],
+    "generalInfo": "Identifying the trigger often requires a process of elimination with a vet's guidance, including diet trials or allergy testing. Management may include medicated shampoos, dietary changes, or medication."
+  }
+]

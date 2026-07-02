@@ -1,0 +1,102 @@
+[
+  {
+    "slug": "maine-coon",
+    "name": "Maine Coon",
+    "temperament": ["Gentle", "Intelligent", "Friendly"],
+    "size": "Large",
+    "weightRange": "10-25 lbs",
+    "lifeSpan": "12-15 years",
+    "commonHealthConditions": ["hypertrophic-cardiomyopathy", "hip-dysplasia"],
+    "overview": "One of the largest domesticated cat breeds and native to the US state of Maine, Maine Coons are known for their tufted ears, bushy tails, and dog-like sociability."
+  },
+  {
+    "slug": "siamese",
+    "name": "Siamese",
+    "temperament": ["Vocal", "Social", "Intelligent"],
+    "size": "Medium",
+    "weightRange": "6-14 lbs",
+    "lifeSpan": "12-15 years",
+    "commonHealthConditions": ["dental-disease", "respiratory-issues", "eye-disorders"],
+    "overview": "Originating in Thailand (formerly Siam), Siamese cats are known for their striking blue eyes, color-point coat, and famously vocal personality."
+  },
+  {
+    "slug": "persian",
+    "name": "Persian",
+    "temperament": ["Calm", "Gentle", "Quiet"],
+    "size": "Medium",
+    "weightRange": "7-12 lbs",
+    "lifeSpan": "12-17 years",
+    "commonHealthConditions": ["polycystic-kidney-disease", "brachycephalic-syndrome", "eye-discharge"],
+    "overview": "Persians are among the oldest known cat breeds, prized for their long coat and flat face, which requires daily grooming and regular eye cleaning."
+  },
+  {
+    "slug": "ragdoll",
+    "name": "Ragdoll",
+    "temperament": ["Docile", "Affectionate", "Relaxed"],
+    "size": "Large",
+    "weightRange": "10-20 lbs",
+    "lifeSpan": "12-17 years",
+    "commonHealthConditions": ["hypertrophic-cardiomyopathy", "bladder-stones"],
+    "overview": "Developed in California in the 1960s, Ragdolls are known for going limp when picked up, which is how the breed got its name."
+  },
+  {
+    "slug": "bengal",
+    "name": "Bengal",
+    "temperament": ["Energetic", "Curious", "Athletic"],
+    "size": "Medium",
+    "weightRange": "8-15 lbs",
+    "lifeSpan": "12-16 years",
+    "commonHealthConditions": ["hypertrophic-cardiomyopathy", "progressive-retinal-atrophy"],
+    "overview": "Bred from crosses with the Asian leopard cat, Bengals have a distinctive wild-looking spotted coat and much higher exercise needs than most domestic breeds."
+  },
+  {
+    "slug": "british-shorthair",
+    "name": "British Shorthair",
+    "temperament": ["Easygoing", "Calm", "Loyal"],
+    "size": "Medium-Large",
+    "weightRange": "7-17 lbs",
+    "lifeSpan": "12-17 years",
+    "commonHealthConditions": ["hypertrophic-cardiomyopathy", "obesity"],
+    "overview": "One of the oldest English cat breeds, the British Shorthair is known for its dense, plush coat and calm, low-maintenance temperament."
+  },
+  {
+    "slug": "sphynx",
+    "name": "Sphynx",
+    "temperament": ["Energetic", "Affectionate", "Curious"],
+    "size": "Medium",
+    "weightRange": "6-14 lbs",
+    "lifeSpan": "8-14 years",
+    "commonHealthConditions": ["hypertrophic-cardiomyopathy", "skin-conditions"],
+    "overview": "Best known for being hairless, the Sphynx actually requires more skin care than furred breeds -- regular bathing to remove oil buildup is essential."
+  },
+  {
+    "slug": "abyssinian",
+    "name": "Abyssinian",
+    "temperament": ["Active", "Playful", "Independent"],
+    "size": "Medium",
+    "weightRange": "6-10 lbs",
+    "lifeSpan": "9-15 years",
+    "commonHealthConditions": ["progressive-retinal-atrophy", "gingivitis"],
+    "overview": "One of the oldest known cat breeds, Abyssinians have a distinctive ticked coat and are among the most active and playful domestic cat breeds."
+  },
+  {
+    "slug": "scottish-fold",
+    "name": "Scottish Fold",
+    "temperament": ["Sweet-Tempered", "Adaptable", "Quiet"],
+    "size": "Medium",
+    "weightRange": "6-13 lbs",
+    "lifeSpan": "11-14 years",
+    "commonHealthConditions": ["osteochondrodysplasia", "polycystic-kidney-disease"],
+    "overview": "Known for the folded-ear gene that gives the breed its name, Scottish Folds carry a cartilage condition that responsible breeders and owners should be aware of."
+  },
+  {
+    "slug": "russian-blue",
+    "name": "Russian Blue",
+    "temperament": ["Gentle", "Loyal", "Reserved"],
+    "size": "Medium",
+    "weightRange": "7-12 lbs",
+    "lifeSpan": "15-20 years",
+    "commonHealthConditions": ["obesity", "bladder-stones"],
+    "overview": "Believed to originate near Russia's Arkhangelsk region, Russian Blues have a dense silvery-blue coat and are known for being reserved with strangers but deeply loyal to family."
+  }
+]
