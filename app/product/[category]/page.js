@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import { getAllProductCategories, getProductCategoryBySlug } from "@/lib/data";
 import { affiliates, AFFILIATE_DISCLOSURE, amazonSearchLink } from "@/lib/affiliates";
+import { buildOpenGraph, productJsonLd, SITE_URL } from "@/lib/seo";
 
 export function generateStaticParams() {
   return getAllProductCategories().map((p) => ({ category: p.slug }));
@@ -9,9 +10,12 @@ export function generateStaticParams() {
 export function generateMetadata({ params }) {
   const category = getProductCategoryBySlug(params.category);
   if (!category) return {};
+  const title = `${category.name} Buying Guide`;
+  const description = `What to look for when choosing ${category.name.toLowerCase()} -- general buying guide, no fabricated reviews.`;
   return {
-    title: `${category.name} Buying Guide`,
-    description: `What to look for when choosing ${category.name.toLowerCase()} -- general buying guide, no fabricated reviews.`,
+    title,
+    description,
+    openGraph: buildOpenGraph({ title, description, path: `/product/${category.slug}` }),
   };
 }
 
@@ -23,6 +27,19 @@ export default function ProductCategoryPage({ params }) {
 
   return (
     <div className="max-w-3xl mx-auto px-4 py-12">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(
+            productJsonLd({
+              name: category.name,
+              description: category.overview,
+              url: `${SITE_URL}/product/${category.slug}`,
+              category: category.name,
+            })
+          ),
+        }}
+      />
       <h1 className="text-3xl font-bold mb-4">{category.name} Buying Guide</h1>
       <p className="text-gray-700 leading-relaxed mb-8">{category.overview}</p>
 
