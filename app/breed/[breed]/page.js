@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getAllBreeds, getBreedBySlug, getAllConditions } from "@/lib/data";
+import { buildOpenGraph, articleJsonLd, SITE_URL } from "@/lib/seo";
 import VetDisclaimer from "@/components/VetDisclaimer";
 
 export function generateStaticParams() {
@@ -10,9 +11,12 @@ export function generateStaticParams() {
 export function generateMetadata({ params }) {
   const breed = getBreedBySlug(params.breed);
   if (!breed) return {};
+  const title = `${breed.name} Guide -- Temperament, Size & Health`;
+  const description = `${breed.name} breed guide: temperament, size, life span, and common health considerations.`;
   return {
-    title: `${breed.name} Guide -- Temperament, Size & Health`,
-    description: `${breed.name} breed guide: temperament, size, life span, and common health considerations.`,
+    title,
+    description,
+    openGraph: buildOpenGraph({ title, description, path: `/breed/${breed.slug}` }),
   };
 }
 
@@ -31,6 +35,18 @@ export default function BreedPage({ params }) {
 
   return (
     <div className="max-w-3xl mx-auto px-4 py-12">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(
+            articleJsonLd({
+              headline: `${breed.name} Guide`,
+              description: breed.overview,
+              url: `${SITE_URL}/breed/${breed.slug}`,
+            })
+          ),
+        }}
+      />
       <p className="text-sm text-amber-700 capitalize mb-2">{breed.species} breed guide</p>
       <h1 className="text-3xl font-bold mb-4">{breed.name}</h1>
 
