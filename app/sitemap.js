@@ -1,6 +1,6 @@
 import { getAllBreeds, getAllConditions, getAllCities, getAllProductCategories } from "@/lib/data";
 
-const BASE_URL = "https://example.com"; // TODO: replace with your real domain after deploy
+const BASE_URL = "https://pet-care-hub-chi.vercel.app"; // TODO: replace with your real domain after deploy
 
 export default function sitemap() {
   const staticPages = ["", "/breed", "/health-condition", "/pet-care-in", "/product"].map((p) => ({
